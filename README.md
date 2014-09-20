@@ -1,4 +1,12 @@
-Rhythm-Slap
-===========
+#Rhythm-Slap
+##Brian Wang
+##Joe Wang
 
-Using the Myo, slap someone to the beat using distinct slapping motions and last as long as you can?
+##Description
+###Using the Myo, slap someone to the beat using distinct slapping motions and last as long as you can?
+
+##Features
+
+##RoadMap
+
+##Bugs
