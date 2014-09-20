@@ -36,10 +36,10 @@ class MainScene : CCNode
     var gameEnded : Bool = false
     
     //initialization of 8beatGestureQueues
-    var fourSlap: [SlapGesture]? = nil
-    var threeSlapOneDouble: [SlapGesture]? = nil
-    var twoDoubletwoSlap: [SlapGesture]? = nil
-    var twoSlapOneDown: [SlapGesture]? = nil
+    var fourSlap : [SlapGesture] = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
+    var threeSlapOneDouble : [SlapGesture] = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
+    var twoDoubletwoSlap : [SlapGesture] = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
+    var twoSlapOneDown : [SlapGesture] = [SingleSlap(), SingleSlap(), SlapDown()]
     
     //game related values
     var comboBarSize : Int = 0
@@ -49,11 +49,6 @@ class MainScene : CCNode
     
     func didLoadFromCCB()
     {
-        fourSlap = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
-        threeSlapOneDouble = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
-        twoDoubletwoSlap = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
-        twoSlapOneDown = [SingleSlap(), SingleSlap(), SlapDown()]
-        
         queue = [self.fourSlap, self.threeSlapOneDouble, self.fourSlap, self.twoSlapOneDown]
         
         self.gestureMessage!.string = ""
