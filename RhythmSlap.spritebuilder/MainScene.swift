@@ -49,10 +49,10 @@ class MainScene : CCNode
     
     func didLoadFromCCB()
     {
-        self.fourSlap = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
-        self.threeSlapOneDouble = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
-        self.twoDoubletwoSlap = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
-        self.twoSlapOneDown = [SingleSlap(), SingleSlap(), SlapDown()]
+        fourSlap = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
+        threeSlapOneDouble = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
+        twoDoubletwoSlap = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
+        twoSlapOneDown = [SingleSlap(), SingleSlap(), SlapDown()]
         
         queue = [self.fourSlap, self.threeSlapOneDouble, self.fourSlap, self.twoSlapOneDown]
         
