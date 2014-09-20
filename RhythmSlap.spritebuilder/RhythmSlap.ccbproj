@@ -63,7 +63,7 @@
 	<key>publishToZipFile</key>
 	<false/>
 	<key>resourceAutoScaleFactor</key>
-	<integer>4</integer>
+	<integer>1</integer>
 	<key>resourcePaths</key>
 	<array>
 		<dict>
@@ -79,7 +79,31 @@
 			<true/>
 		</dict>
 		<key>Sprites</key>
-		<dict/>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+		</dict>
+		<key>Sprites/Faces</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Sprites/Hands</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Sprites/Misc</key>
+		<dict>
+			<key>isDirty</key>
+			<true/>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
