@@ -80,56 +80,7 @@
 		</dict>
 		<key>Sprites</key>
 		<dict/>
-		<key>Sprites/Faces/face_blink.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>Sprites/Faces/face_headbash.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>Sprites/Faces/face_left.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
 		<key>Sprites/Faces/face_normal.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>Sprites/Faces/face_uppercut.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>Sprites/Hands/dhand_left.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>Sprites/Hands/hand_left.png</key>
-		<dict>
-			<key>isDirty</key>
-			<true/>
-			<key>scaleFrom</key>
-			<integer>1</integer>
-		</dict>
-		<key>Sprites/Misc/healthbar.png</key>
 		<dict>
 			<key>isDirty</key>
 			<true/>
