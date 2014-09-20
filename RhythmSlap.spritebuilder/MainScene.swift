@@ -10,14 +10,17 @@ import Foundation
 
 class MainScene : CCNode
 {
+    
+    
     //basic inits
-    weak var hand : Hand?
-    weak var face : Face?
-    weak var timer: Timer?
-    weak var comboBar: ComboBar?
-    weak var colorGradientNode: CCNodeGradient?
-    weak var glowNode: CCNodeColor?
-    weak var gestureMessage: CCLabelTTF?
+    var hand : Hand? = nil
+    var face : Face? = nil
+    var timer: Timer? = nil
+    var comboBar: ComboBar? = nil
+    var colorGradientNode: CCNodeGradient? = nil
+    var glowNode: CCNodeColor? = nil
+    var gestureMessage: CCLabelTTF? = nil
+    
     
     //numberOfSlaps
     var currentNumOfSlaps : Int = 5
@@ -28,39 +31,48 @@ class MainScene : CCNode
     
     //game related Bools
     var gameCountdownMode : Bool = true;
-    var gameCountdown: int = 4;
-    var gameStarted : Bool = false
+    var gameCountdown: Int = 4;
+    var gameStarted: Bool = false
+    var tutorialMode: Bool = false
     
     var gameEnded : Bool = false
     
     //game related values
     var comboBarSize : Int = 0
+    var queue : [SlapGesture]? = nil
+    var currentGesture: SlapGesture? = nil
+    
+    //initialization of 8beatGestureQueues
+    var fourSlap: [SlapGesture] = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
+    var threeSlapOneDouble: [SlapGesture] = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
+    var twoDoubletwoSlap: [SlapGesture] = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
+    var twoSlapOneDown: [SlapGesture] = [SingleSlap(), SingleSlap(), SlapDown()]
     
     func didLoadFromCCB()
     {
-        self.gestureMessage.string = ""
+        self.gestureMessage!.string = ""
     }
     
     override func update(delta : CCTime)
     {
-        if (!gameStarted)
+        if !self.gameStarted
         {
-            if (gameCountdownMode)
+            if self.gameCountdownMode
             {
-                if (timer.currentTime%1 == 0)
+                if self.timer!.currentTime % 1 == 0
                 {
-                    if (gameCountdown == 0)
+                    if gameCountdown == 0
                     {
-                        self.gestureMessage.string = "START!"
+                        self.gestureMessage!.string = "START!"
                         self.gameCountdownMode = false
                         self.gameStarted = true
                         
                     }
-                    else if (gameCountdown < 4)
+                    else if gameCountdown < 4
                     {
-                        self.gestureMessage.string = "\(gameCountdown)"
+                        self.gestureMessage!.string = "\(gameCountdown)"
                     }
-                    self.timer.currentTime = 0
+                    self.timer!.currentTime = 0
                     self.gameCountdown--
                 }
             }
@@ -71,7 +83,7 @@ class MainScene : CCNode
         }
     }
     
-    func setPoints(points: int)
+    func setPoints(points: Int)
     {
         
     }
@@ -84,6 +96,20 @@ class MainScene : CCNode
     func endGame()
     {
         
+    }
+    
+    func loadGesture()
+    {
+        
+    }
+    
+    func generateGestures()
+    {
+        if !tutorialMode
+        {
+            queue = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap(),
+                        SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
+        }
     }
     
 }
