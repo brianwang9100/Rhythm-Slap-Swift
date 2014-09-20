@@ -13,7 +13,7 @@ class ComboBar : CCNode
     var numOfLives : Int = 3
     let totalSize : Int = 100
     var currentSize : Int = 70
-
+    
     
     func didLoadFromCCB()
     {

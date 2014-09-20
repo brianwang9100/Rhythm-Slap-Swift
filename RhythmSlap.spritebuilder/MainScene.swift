@@ -28,7 +28,7 @@ class MainScene : CCNode
     var gameEnded : Bool = false
     
     //game related values
-    
+    var comboBarSize : Int = 0
     
     func didLoadFromCCB()
     {
