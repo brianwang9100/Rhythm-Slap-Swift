@@ -43,13 +43,13 @@ class MainScene : CCNode
     
     //game related values
     var comboBarSize : Int = 0
-    var queue : ([[SlapGesture]])? = nil
+//    var queue : ([[SlapGesture]])? = nil
     var currentGesture: SlapGesture? = nil
     var currentGetureIndex: Int = 0
     
     func didLoadFromCCB()
     {
-        queue = [self.fourSlap, self.threeSlapOneDouble, self.fourSlap, self.twoSlapOneDown]
+    //    queue = [self.fourSlap, self.threeSlapOneDouble, self.fourSlap, self.twoSlapOneDown]
         
         self.gestureMessage!.string = ""
         let thisView = CCDirector.sharedDirector().view
@@ -89,14 +89,14 @@ class MainScene : CCNode
                 {
                     if gameCountdown == 0
                     {
-                        self.gestureMessage!.string = "START!"
+                        gestureMessage!.string = "START!"
                         self.gameCountdownMode = false
                         self.gameStarted = true
                         
                     }
                     else if gameCountdown < 4
                     {
-                        self.gestureMessage!.string = "\(gameCountdown)"
+                        gestureMessage!.string = "\(gameCountdown)"
                     }
                     self.timer!.currentTime = 0
                     self.gameCountdown--
@@ -126,7 +126,7 @@ class MainScene : CCNode
     
     func loadGesture()
     {
-        currentGesture = queue![0][0]
+    //    currentGesture = queue![0][0]
     }
     
 }

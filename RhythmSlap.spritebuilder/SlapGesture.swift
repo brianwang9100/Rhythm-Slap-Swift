@@ -10,7 +10,7 @@ import Foundation
 
 class SlapGesture : CCNode
 {
-    public enum slapDirections
+    internal enum slapDirections
     {
         case singleSlap
         
