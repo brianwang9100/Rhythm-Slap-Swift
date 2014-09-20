@@ -11,28 +11,24 @@ import Foundation
 class MainScene : CCNode
 {
     //basic inits
-    public weak var hand : Hand?
-    public weak var face : Face?
-    public weak var timer: Timer?
-    public weak var comboBar: ComboBar?
+    weak var hand : Hand?
+    weak var face : Face?
+    weak var timer: Timer?
+    weak var comboBar: ComboBar?
     
     //numberOfSlaps
-    public var currentNumOfSlaps : Int = 5
-    public var waveNumOfSlaps : Int = 5
+    var currentNumOfSlaps : Int = 5
+    var waveNumOfSlaps : Int = 5
     
     //wave inits
-    public var currentWave : Int = 0
+    var currentWave : Int = 0
     
     //game related Bools
-    public var gameStarted : Bool = false
-    public var gameEnded : Bool = false
+    var gameStarted : Bool = false
+    var gameEnded : Bool = false
     
     //game related values
     
-    override init()
-    {
-        super.init()
-    }
     
     func didLoadFromCCB()
     {

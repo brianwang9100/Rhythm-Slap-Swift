@@ -11,11 +11,6 @@ import Foundation
 class Face : CCNode
 {
     
-    override init()
-    {
-        super.init()
-    }
-    
     func didLoadFromCCB()
     {
         

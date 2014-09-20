@@ -19,13 +19,7 @@ class SlapGesture : CCNode
         case upSlap
         case downSlap
     }
-    
-    override init()
-    {
-        super.init()
-    }
 
-    public var numOfBeats : Int = 0
-    
-    public var slapSequence :[(slapDirections, Double)]?
+    var numOfBeats : Int = 0    
+    var slapSequence :[(slapDirections, Double)]?
 }

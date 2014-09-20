@@ -10,14 +10,10 @@ import Foundation
 
 class ComboBar : CCNode
 {
-    public var numOfLives : Int = 3
-    public let totalSize : Int = 100
-    public var currentSize : Int = 70
-    
-    override init()
-    {
-        super.init()
-    }
+    var numOfLives : Int = 3
+    let totalSize : Int = 100
+    var currentSize : Int = 70
+
     
     func didLoadFromCCB()
     {

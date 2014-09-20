@@ -18,12 +18,7 @@ class Hand : CCNode
         case DownSlap
     }
     
-    public var isSlapping : Bool = false
-    
-    override init()
-    {
-        super.init()
-    }
+    var isSlapping : Bool = false
     
     func didLoadFromCCB()
     {

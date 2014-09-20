@@ -11,13 +11,8 @@ import Foundation
 
 class Timer : CCNode
 {
-    public var currentTime : Double = 0;
-    public var beatLength : Double = 1;
-    
-    override init()
-    {
-        super.init()
-    }
+    var currentTime : Double = 0;
+    var beatLength : Double = 1;
     
     func didLoadFromCCB()
     {

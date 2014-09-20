@@ -11,14 +11,9 @@ import Foundation
 class StartScene : CCNode
 {
     
-    public let hand : Hand?
-    public let face : Face?
-    public let timer : Timer?
-    
-    override init()
-    {
-        super.init()
-    }
+    let hand : Hand?
+    let face : Face?
+    let timer : Timer?
     
     func didLoadFromCCB()
     {
