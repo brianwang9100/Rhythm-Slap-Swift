@@ -80,8 +80,6 @@
 		</dict>
 		<key>Sprites</key>
 		<dict/>
-<<<<<<< HEAD
-=======
 		<key>Sprites/Faces/face_blink.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -97,14 +95,11 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
->>>>>>> FETCH_HEAD
 		<key>Sprites/Faces/face_normal.png</key>
 		<dict>
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
-<<<<<<< HEAD
-=======
 		<key>Sprites/Faces/face_uppercut.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -125,7 +120,6 @@
 			<key>scaleFrom</key>
 			<integer>1</integer>
 		</dict>
->>>>>>> FETCH_HEAD
 		<key>ccbResources</key>
 		<dict>
 			<key>previewFolderHidden</key>
