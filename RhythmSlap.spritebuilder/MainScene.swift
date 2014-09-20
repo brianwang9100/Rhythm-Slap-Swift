@@ -10,8 +10,6 @@ import Foundation
 
 class MainScene : CCNode
 {
-    
-    
     //basic inits
     var hand : Hand? = nil
     var face : Face? = nil
@@ -37,20 +35,53 @@ class MainScene : CCNode
     
     var gameEnded : Bool = false
     
+    //initialization of 8beatGestureQueues
+    var fourSlap: [SlapGesture]? = nil
+    var threeSlapOneDouble: [SlapGesture]? = nil
+    var twoDoubletwoSlap: [SlapGesture]? = nil
+    var twoSlapOneDown: [SlapGesture]? = nil
+    
     //game related values
     var comboBarSize : Int = 0
-    var queue : [SlapGesture]? = nil
+    var queue : ([[SlapGesture]])? = nil
     var currentGesture: SlapGesture? = nil
-    
-    //initialization of 8beatGestureQueues
-    var fourSlap: [SlapGesture] = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
-    var threeSlapOneDouble: [SlapGesture] = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
-    var twoDoubletwoSlap: [SlapGesture] = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
-    var twoSlapOneDown: [SlapGesture] = [SingleSlap(), SingleSlap(), SlapDown()]
+    var currentGetureIndex: Int = 0
     
     func didLoadFromCCB()
     {
+        self.fourSlap = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap()]
+        self.threeSlapOneDouble = [SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
+        self.twoDoubletwoSlap = [DoubleSlap(), DoubleSlap(), SingleSlap(), SingleSlap()]
+        self.twoSlapOneDown = [SingleSlap(), SingleSlap(), SlapDown()]
+        
+        queue = [self.fourSlap, self.threeSlapOneDouble, self.fourSlap, self.twoSlapOneDown]
+        
         self.gestureMessage!.string = ""
+        let thisView = CCDirector.sharedDirector().view
+        
+        // listen for swipes to the left
+        let leftSelector : Selector = "swipeLeft"
+        let swipeLeft = UISwipeGestureRecognizer(target: self, action: leftSelector)
+        swipeLeft.direction = UISwipeGestureRecognizerDirection.Left
+        thisView.addGestureRecognizer(swipeLeft)
+        
+        // listen for swipes to the right
+        var rightSelector : Selector = "swipeRight"
+        let swipeRight = UISwipeGestureRecognizer(target: self, action: rightSelector)
+        swipeRight.direction = UISwipeGestureRecognizerDirection.Right
+        thisView.addGestureRecognizer(swipeRight)
+        
+        //listen for swipes to the top
+        let upSelector : Selector = "swipeUp"
+        let swipeUp = UISwipeGestureRecognizer(target: self, action: upSelector)
+        swipeUp.direction = UISwipeGestureRecognizerDirection.Up
+        thisView.addGestureRecognizer(swipeUp)
+        
+        //listen for swipes to the bottom
+        let downSelector : Selector = "swipeDown"
+        let swipeDown = UISwipeGestureRecognizer(target: self, action: downSelector)
+        swipeDown.direction = UISwipeGestureRecognizerDirection.Down
+        thisView.addGestureRecognizer(swipeDown)
     }
     
     override func update(delta : CCTime)
@@ -76,10 +107,10 @@ class MainScene : CCNode
                     self.gameCountdown--
                 }
             }
-            else
-            {
-                
-            }
+        }
+        else
+        {
+            
         }
     }
     
@@ -100,16 +131,7 @@ class MainScene : CCNode
     
     func loadGesture()
     {
-        
-    }
-    
-    func generateGestures()
-    {
-        if !tutorialMode
-        {
-            queue = [SingleSlap(), SingleSlap(), SingleSlap(), SingleSlap(),
-                        SingleSlap(), SingleSlap(), SingleSlap(), DoubleSlap()]
-        }
+        currentGesture = queue![0][0]
     }
     
 }
