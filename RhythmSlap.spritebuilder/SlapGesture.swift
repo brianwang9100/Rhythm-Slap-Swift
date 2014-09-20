@@ -10,7 +10,7 @@ import Foundation
 
 class SlapGesture : CCNode
 {
-    public weak enum slapDirections
+    public enum slapDirections
     {
         case singleSlap
         
@@ -19,8 +19,13 @@ class SlapGesture : CCNode
         case upSlap
         case downSlap
     }
-
-    public var numOfBeats : Int
     
-    public var slapSequence :[(slapDirections, Double)] = nil
+    override init()
+    {
+        super.init()
+    }
+
+    public var numOfBeats : Int = 0
+    
+    public var slapSequence :[(slapDirections, Double)]?
 }

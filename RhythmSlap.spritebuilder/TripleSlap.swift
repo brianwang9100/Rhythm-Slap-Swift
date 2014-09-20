@@ -11,19 +11,10 @@ import Foundation
 
 class TripleSlap : SlapGesture
 {
-    public weak enum slapDirections
-    {
-        case singleSlap
-        
-        case leftSlap
-        case rightSlap
-        case upSlap
-        case downSlap
-    }
 
-    override func didLoadFromCCB()
+    func didLoadFromCCB()
     {
         self.numOfBeats = 4
-        self.slapSequence = [(leftSlap, 1), (rightSlap, 2), (upSlap, 3)]
+        self.slapSequence = [(slapDirections.leftSlap, 1), (slapDirections.rightSlap, 2), (slapDirections.upSlap, 3)]
     }
 }

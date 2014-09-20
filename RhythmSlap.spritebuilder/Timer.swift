@@ -14,12 +14,17 @@ class Timer : CCNode
     public var currentTime : Double = 0;
     public var beatLength : Double = 1;
     
-    override func didLoadFromCCB()
+    override init()
+    {
+        super.init()
+    }
+    
+    func didLoadFromCCB()
     {
         
     }
     
-    override func update(CCTime: delta)
+    override func update(delta : CCTime)
     {
         self.currentTime += delta;
         

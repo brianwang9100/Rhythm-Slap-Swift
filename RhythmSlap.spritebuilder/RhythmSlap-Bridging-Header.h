@@ -9,6 +9,7 @@
 #import "CCAnimationManager.h"
 #import "CCNode.h"
 #import "CCScene.h"
+#import "CCScene.h"
 #import "CCAction.h"
 #import "CCPhysics+ObjectiveChipmunk.h"
 #import "ObjectiveChipmunk/ObjectiveChipmunk.h"

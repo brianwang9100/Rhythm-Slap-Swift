@@ -11,12 +11,17 @@ import Foundation
 class Face : CCNode
 {
     
-    override func didLoadFromCCB()
+    override init()
+    {
+        super.init()
+    }
+    
+    func didLoadFromCCB()
     {
         
     }
     
-    override func update(CCTime: delta)
+    override func update(delta : CCTime)
     {
         
     }

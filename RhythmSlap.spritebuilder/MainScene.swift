@@ -8,13 +8,13 @@
 
 import Foundation
 
-class MainScene : CCScene
+class MainScene : CCNode
 {
     //basic inits
-    public weak let hand : Hand
-    public weak let face : Face
-    public weak let timer: Timer
-    public weak let comboBar: ComboBar
+    public weak var hand : Hand?
+    public weak var face : Face?
+    public weak var timer: Timer?
+    public weak var comboBar: ComboBar?
     
     //numberOfSlaps
     public var currentNumOfSlaps : Int = 5
@@ -29,14 +29,17 @@ class MainScene : CCScene
     
     //game related values
     
+    override init()
+    {
+        super.init()
+    }
     
-    
-    override func didLoadFromCCB()
+    func didLoadFromCCB()
     {
         
     }
     
-    override func update(CCTime: delta)
+    override func update(delta : CCTime)
     {
         
     }

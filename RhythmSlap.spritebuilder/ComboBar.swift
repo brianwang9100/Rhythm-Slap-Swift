@@ -12,14 +12,19 @@ class ComboBar : CCNode
 {
     public var numOfLives : Int = 3
     public let totalSize : Int = 100
-    public let currentSize : Int = 70
+    public var currentSize : Int = 70
     
-    override func didLoadFromCCB()
+    override init()
+    {
+        super.init()
+    }
+    
+    func didLoadFromCCB()
     {
         
     }
     
-    override func update(CCTime: delta)
+    override func update(delta : CCTime)
     {
         
     }

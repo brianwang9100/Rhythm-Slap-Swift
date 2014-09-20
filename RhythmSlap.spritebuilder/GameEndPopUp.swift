@@ -10,13 +10,18 @@ import Foundation
 
 class GameEndPopUp : CCNode
 {
+ 
+    override init()
+    {
+        super.init()
+    }
     
-    override func didLoadFromCCB()
+    func didLoadFromCCB()
     {
         
     }
     
-    override func update(CCTime: delta)
+    override func update(delta : CCTime)
     {
         
     }

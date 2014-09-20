@@ -8,19 +8,25 @@
 
 import Foundation
 
-class StartScene : CCScene
+class StartScene : CCNode
 {
     
-    public let hand : Hand
-    public let face : Face
-    public let timer : Timer
+    public let hand : Hand?
+    public let face : Face?
+    public let timer : Timer?
     
-    override func didLoadFromCCB()
+    override init()
+    {
+        super.init()
+    }
+    
+    func didLoadFromCCB()
     {
         
     }
     
-    override func update(CCTime: delta)
+    override func update(delta : CCTime
+        )
     {
         
     }
