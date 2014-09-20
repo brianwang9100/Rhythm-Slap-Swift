@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2FE35E5A19CD62F200AF940C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE35E5919CD62F200AF940C /* Images.xcassets */; };
 		2FE35E5D19CD630A00AF940C /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE35E5C19CD630A00AF940C /* Images-2.xcassets */; };
+		2FE35E6519CD8ACF00AF940C /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FE35E6419CD8ACF00AF940C /* Images-3.xcassets */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -72,6 +73,7 @@
 /* Begin PBXFileReference section */
 		2FE35E5919CD62F200AF940C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = RhythmSlap/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		2FE35E5C19CD630A00AF940C /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-2.xcassets"; path = "RhythmSlap/Images-2.xcassets"; sourceTree = SOURCE_ROOT; };
+		2FE35E6419CD8ACF00AF940C /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = "Images-3.xcassets"; path = "RhythmSlap/Images-3.xcassets"; sourceTree = SOURCE_ROOT; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -240,6 +242,7 @@
 		B77F1B4617B978D7009739AE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2FE35E6419CD8ACF00AF940C /* Images-3.xcassets */,
 				2FE35E5C19CD630A00AF940C /* Images-2.xcassets */,
 				2FE35E5919CD62F200AF940C /* Images.xcassets */,
 				B73789911807667A0076A88C /* Icons */,
@@ -359,6 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B71F5919188484E7003F4D28 /* Settings.png in Resources */,
+				2FE35E6519CD8ACF00AF940C /* Images-3.xcassets in Resources */,
 				2FE35E5A19CD62F200AF940C /* Images.xcassets in Resources */,
 				B7378978180762440076A88C /* Default@2x.png in Resources */,
 				B71F5914188484E7003F4D28 /* iPad@2x.png in Resources */,
@@ -499,7 +503,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -538,7 +542,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
