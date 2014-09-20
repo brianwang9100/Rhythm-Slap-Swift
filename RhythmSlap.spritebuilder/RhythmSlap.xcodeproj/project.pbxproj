@@ -38,6 +38,17 @@
 		DF6A7CA219CD1F6F000AE50F /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CA119CD1F6F000AE50F /* MainScene.swift */; };
 		DF6A7CA419CD1F7D000AE50F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CA319CD1F7D000AE50F /* main.m */; };
 		DF6A7CA719CD1FA3000AE50F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CA619CD1FA3000AE50F /* README.md */; };
+		DF6A7CA919CD238F000AE50F /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CA819CD238F000AE50F /* StartScene.swift */; };
+		DF6A7CAC19CD24CE000AE50F /* Face.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CAB19CD24CE000AE50F /* Face.swift */; };
+		DF6A7CB019CD2505000AE50F /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CAF19CD2505000AE50F /* Hand.swift */; };
+		DF6A7CB219CD2797000AE50F /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CB119CD2797000AE50F /* Timer.swift */; };
+		DF6A7CB419CD2E0E000AE50F /* GameEndPopUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CB319CD2E0E000AE50F /* GameEndPopUp.swift */; };
+		DF6A7CB619CD2E82000AE50F /* SlapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CB519CD2E82000AE50F /* SlapGesture.swift */; };
+		DF6A7CB919CD2EA9000AE50F /* SingleSlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CB819CD2EA9000AE50F /* SingleSlap.swift */; };
+		DF6A7CBB19CD33AA000AE50F /* DoubleSlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CBA19CD33AA000AE50F /* DoubleSlap.swift */; };
+		DF6A7CBD19CD33B5000AE50F /* TripleSlap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CBC19CD33B5000AE50F /* TripleSlap.swift */; };
+		DF6A7CBF19CD33D8000AE50F /* SlapDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CBE19CD33D8000AE50F /* SlapDown.swift */; };
+		DF6A7CC119CD36DA000AE50F /* ComboBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6A7CC019CD36DA000AE50F /* ComboBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +105,17 @@
 		DF6A7CA319CD1F7D000AE50F /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Source/main.m; sourceTree = "<group>"; };
 		DF6A7CA519CD1F84000AE50F /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Prefix.pch; path = Source/Prefix.pch; sourceTree = "<group>"; };
 		DF6A7CA619CD1FA3000AE50F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DF6A7CA819CD238F000AE50F /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
+		DF6A7CAB19CD24CE000AE50F /* Face.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Face.swift; sourceTree = "<group>"; };
+		DF6A7CAF19CD2505000AE50F /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		DF6A7CB119CD2797000AE50F /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		DF6A7CB319CD2E0E000AE50F /* GameEndPopUp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameEndPopUp.swift; sourceTree = "<group>"; };
+		DF6A7CB519CD2E82000AE50F /* SlapGesture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlapGesture.swift; sourceTree = "<group>"; };
+		DF6A7CB819CD2EA9000AE50F /* SingleSlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleSlap.swift; sourceTree = "<group>"; };
+		DF6A7CBA19CD33AA000AE50F /* DoubleSlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoubleSlap.swift; sourceTree = "<group>"; };
+		DF6A7CBC19CD33B5000AE50F /* TripleSlap.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripleSlap.swift; sourceTree = "<group>"; };
+		DF6A7CBE19CD33D8000AE50F /* SlapDown.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlapDown.swift; sourceTree = "<group>"; };
+		DF6A7CC019CD36DA000AE50F /* ComboBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComboBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +153,15 @@
 			children = (
 				DF6A7C9E19CD1F5C000AE50F /* AppDelegate.swift */,
 				DF6A7C9D19CD1F5A000AE50F /* RhythmSlap-Bridging-Header.h */,
+				DF6A7CA819CD238F000AE50F /* StartScene.swift */,
 				DF6A7CA119CD1F6F000AE50F /* MainScene.swift */,
-				DF6A7CA319CD1F7D000AE50F /* main.m */,
-				DF6A7CA519CD1F84000AE50F /* Prefix.pch */,
+				DF6A7CC019CD36DA000AE50F /* ComboBar.swift */,
+				DF6A7CAB19CD24CE000AE50F /* Face.swift */,
+				DF6A7CB119CD2797000AE50F /* Timer.swift */,
+				DF6A7CAF19CD2505000AE50F /* Hand.swift */,
+				DF6A7CB319CD2E0E000AE50F /* GameEndPopUp.swift */,
+				DF6A7CB719CD2E87000AE50F /* Slaps */,
+				DF6A7CAA19CD24C1000AE50F /* SideFiles */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -223,6 +251,27 @@
 				B73789861807631A0076A88C /* Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DF6A7CAA19CD24C1000AE50F /* SideFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DF6A7CA319CD1F7D000AE50F /* main.m */,
+				DF6A7CA519CD1F84000AE50F /* Prefix.pch */,
+			);
+			name = SideFiles;
+			sourceTree = "<group>";
+		};
+		DF6A7CB719CD2E87000AE50F /* Slaps */ = {
+			isa = PBXGroup;
+			children = (
+				DF6A7CB519CD2E82000AE50F /* SlapGesture.swift */,
+				DF6A7CB819CD2EA9000AE50F /* SingleSlap.swift */,
+				DF6A7CBA19CD33AA000AE50F /* DoubleSlap.swift */,
+				DF6A7CBC19CD33B5000AE50F /* TripleSlap.swift */,
+				DF6A7CBE19CD33D8000AE50F /* SlapDown.swift */,
+			);
+			name = Slaps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,11 +395,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6A7CB019CD2505000AE50F /* Hand.swift in Sources */,
 				DF6A7CA219CD1F6F000AE50F /* MainScene.swift in Sources */,
+				DF6A7CBB19CD33AA000AE50F /* DoubleSlap.swift in Sources */,
+				DF6A7CA919CD238F000AE50F /* StartScene.swift in Sources */,
+				DF6A7CAC19CD24CE000AE50F /* Face.swift in Sources */,
 				DF6A7C9F19CD1F5C000AE50F /* AppDelegate.swift in Sources */,
+				DF6A7CB919CD2EA9000AE50F /* SingleSlap.swift in Sources */,
 				DF6A7CA719CD1FA3000AE50F /* README.md in Sources */,
+				DF6A7CB219CD2797000AE50F /* Timer.swift in Sources */,
+				DF6A7CBD19CD33B5000AE50F /* TripleSlap.swift in Sources */,
 				DF6A7CA419CD1F7D000AE50F /* main.m in Sources */,
+				DF6A7CB419CD2E0E000AE50F /* GameEndPopUp.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				DF6A7CC119CD36DA000AE50F /* ComboBar.swift in Sources */,
+				DF6A7CB619CD2E82000AE50F /* SlapGesture.swift in Sources */,
+				DF6A7CBF19CD33D8000AE50F /* SlapDown.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
