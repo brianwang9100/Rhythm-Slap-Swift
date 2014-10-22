@@ -1,13 +1,10 @@
-#Rhythm-Slap
+#Rhythm-Slap-Swift-Version-DROPPED
 ##Brian Wang
 ##Joe Wang
 
 ##Description
-###Using the Myo, slap someone to the beat using distinct slapping motions and last as long as you can?
+Using the Myo, slap someone to the beat using distinct slapping motions and last as long as you can?
 
-##Features
-Converted to Swift
+SWIFT VERSION
 
-##RoadMap
-
-##Bugs
+Was Dropped due to XCode 6 crashes and instability of language.

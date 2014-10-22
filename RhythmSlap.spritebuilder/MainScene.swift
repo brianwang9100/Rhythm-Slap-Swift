@@ -28,8 +28,8 @@ class MainScene : CCNode
     var currentWave : Int = 0
     
     //game related Bools
-    var gameCountdownMode : Bool = true;
-    var gameCountdown: Int = 4;
+    var gameCountdownMode : Bool = true
+    var gameCountdown: Int = 4
     var gameStarted: Bool = false
     var tutorialMode: Bool = false
     
