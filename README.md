@@ -1,8 +1,10 @@
 #Rhythm-Slap-Swift-Version-DROPPED
-##Brian Wang
-##Joe Wang
+###Authors
+Brian Wang
 
-##Description
+Joe Wang
+
+###Description
 Using the Myo, slap someone to the beat using distinct slapping motions and last as long as you can?
 
 SWIFT VERSION
